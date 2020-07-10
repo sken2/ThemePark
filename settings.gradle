@@ -1,0 +1,3 @@
+include ':themePark'
+include ':app'
+rootProject.name = "ThemePark"

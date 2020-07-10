@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,39 +16,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_pushme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Push me"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Switch
-        android:id="@+id/switch_slide_me"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Slide me"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/text_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="its medium"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="@+id/text_large"
         app:layout_constraintTop_toBottomOf="@+id/text_large" />
 
     <TextView
-        android:id="@+id/text_snakk"
+        android:id="@+id/text_snall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -57,4 +35,124 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintStart_toStartOf="@+id/text_medium"
         app:layout_constraintTop_toBottomOf="@+id/text_medium" />
+
+    <TextView
+        android:id="@+id/text_large_inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:text="Large Inverse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        app:layout_constraintStart_toEndOf="@+id/text_large"
+        app:layout_constraintTop_toTopOf="@+id/text_large" />
+
+    <TextView
+        android:id="@+id/text_midium_inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Medium Inverse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:layout_constraintStart_toStartOf="@+id/text_large_inverse"
+        app:layout_constraintTop_toBottomOf="@+id/text_large_inverse" />
+
+    <TextView
+        android:id="@+id/text_snall_inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Small Inverse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        app:layout_constraintStart_toStartOf="@+id/text_midium_inverse"
+        app:layout_constraintTop_toBottomOf="@+id/text_midium_inverse" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Switch
+        android:id="@+id/switch_slide_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Slide me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+    <Button
+        android:id="@+id/button_pushme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Push me"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+    <TextView
+        android:id="@+id/text_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Display1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="@+id/text_snall"
+        app:layout_constraintTop_toBottomOf="@+id/text_snall" />
+
+    <TextView
+        android:id="@+id/text_dusokat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dsplay2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="@+id/text_display1"
+        app:layout_constraintTop_toBottomOf="@+id/text_display1" />
+
+    <TextView
+        android:id="@+id/text_display3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintStart_toStartOf="@+id/text_dusokat2"
+        app:layout_constraintTop_toBottomOf="@+id/text_dusokat2" />
+
+    <TextView
+        android:id="@+id/text_body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@+id/text_display3"
+        app:layout_constraintTop_toBottomOf="@+id/text_display3" />
+
+    <TextView
+        android:id="@+id/text_body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="@+id/text_body1"
+        app:layout_constraintTop_toBottomOf="@+id/text_body1" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/text_body2"
+        app:layout_constraintTop_toBottomOf="@+id/text_body2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="trad_blue"
-        parent="Theme.AppCompat.DayNight.DarkActionBar"/>
+        parent="Theme.AppCompat.Light.DarkActionBar">
+            <item name="colorPrimary">@color/sora_iro</item>
+            <item name="colorPrimaryDark">@color/ai_iro</item>
+            <item name="colorAccent">@color/fuji_iro</item>
+            <item name="android:textColorPrimary">@color/budou_iro</item>
+            <item name="android:textColorPrimaryInverse">@color/aofuji_iro</item>
+    </style>
+
 </resources>

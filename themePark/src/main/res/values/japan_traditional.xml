@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mizu_iro">#bce2e8</color>
+    <color name="sora_iro">#bce2e8</color>
+    <color name="wasurenagusa_iro">#89c3eb</color>
+    <color name="aofuji_iro">#84a2d4</color>
+    <color name="hakugun">#83ccd2</color>
+    <color name="ama_iro">#2ca9e1</color>
+    <color name="ao">#0095d9</color>
+    <color name="konpeki">#007bbb</color>
+    <color name="gunjyou_iro">#4c6cb3</color>
+    <color name="ruri_iro">#1e50a2</color>
+    <color name="ai_iro">#165e83</color>
+    <color name="rurikon">#1c305c</color>
+    <color name="awafuji_iro">#bbc8e6</color>
+    <color name="fuji_iro">#bbbcde</color>
+    <color name="budou_iro">#522f60</color>
+</resources>

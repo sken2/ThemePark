@@ -11,5 +11,8 @@
         <item name="android:textColorTertiary">@color/ai_iro</item>
         <item name="android:textColorTertiaryInverse">@color/mizu_iro</item>
     </style>
+    <style name="TextAppearance.AppCompat.Body1.Accent">
+        <item name="android:textColor">?android:colorAccent</item>
+    </style>
 
 </resources>

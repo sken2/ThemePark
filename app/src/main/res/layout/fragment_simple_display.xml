@@ -6,15 +6,24 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/label_appearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextApperances"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1.Accent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/text_large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="Large"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/label_appearance" />
 
     <TextView
         android:id="@+id/text_medium"
@@ -153,6 +162,26 @@
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintStart_toStartOf="@+id/text_body2"
+        app:layout_constraintTop_toBottomOf="@+id/label_wdgets" />
+
+    <TextView
+        android:id="@+id/label_wdgets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Wdgets"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1.Accent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_body2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_slide_me" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
